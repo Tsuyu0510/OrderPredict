@@ -141,7 +141,7 @@ ax.legend();  # Add a legend.
 
 ## prediction 寫入db 
 dtypedict = {'object':VARCHAR(length = 255),'int':Integer(),'float':Float()}
-MYSQL_engine = create_engine('mysql+pymysql://root:Tdc202106@172.17.11.76:3306/db02', encoding='utf_8_sig')
+MYSQL_engine = create_engine('mysql+pymysql://root:*********', encoding='utf_8_sig')
 #for l in range(len(df_finalll)):
 ## 使用try except 避開PK 重複寫入問題
 try:
